@@ -28,7 +28,9 @@
 
           <ul class="site-nav-list list">
             <li class="site-nav-item">
-              <a href="./index.html" class="site-nav-link link">Studio</a>
+              <a href="./index.html" class="site-nav-link link current"
+                >Studio</a
+              >
             </li>
             <li class="site-nav-item">
               <a href="./portfolio.html" class="site-nav-link link"
@@ -61,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Principles -->
@@ -423,5 +427,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-button-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
